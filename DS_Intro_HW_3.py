@@ -25,6 +25,7 @@ def read_line(n, file):
                         x = word
                         break
         return x
+
 #-------------------------------------------------
 #q.B:
 def longest_words(file):
@@ -39,7 +40,6 @@ def longest_words(file):
         ON_OFF = True
         return err
     if ON_OFF == False:
-        myText=myText
         f_Words = myText.read()
         f_Words_split=re.split('[\s+ . )]', f_Words)
         for word in f_Words_split:
